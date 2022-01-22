@@ -7,8 +7,8 @@ from userbot import CMD_HELP
 @register(outgoing=True, pattern="^.kill$")
 async def kill_func(message):
     animation_chars = [
-        "killing...",
-        "Ｆｉｉｉｉｉｒｅ",
+        "Matando...",
+        "F u u u u e g o",
         "(　･ิω･ิ)︻デ═一-->",
         "------>_____________",
         "--------->___⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠⁠_______",
@@ -16,7 +16,7 @@ async def kill_func(message):
         "------------------->",
         "------>;(^。^)ノ",
         "(￣ー￣) DED",
-        "<b>Target killed successfully (´°̥̥̥̥̥̥̥̥ω°̥̥̥̥̥̥̥̥｀)</b>",
+        "<b>Objetivo asesinado. (´°̥̥̥̥̥̥̥̥ω°̥̥̥̥̥̥̥̥｀)</b>",
     ]
     for i in range(10):
         await sleep(0.6)
