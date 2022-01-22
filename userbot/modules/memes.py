@@ -407,25 +407,15 @@ FACEREACTS = [
 ]
 
 RUNS_STR = [
-    "Runs to Thanos..",
-    "Runs far, far away from earth..",
-    "Running faster than Bolt coz i'mma userbot !!",
-    "Runs to Marie..",
-    "This Group is too cancerous to deal with.",
-    "Cya bois",
+    "WHY ARE U RUNNIN",
+    "No me cuentes tu vida crack",
+    "*Corre por su vida*",
+    "Corriendo lejos de este cringe",
+    "Cya",
     "Kys",
-    "I go away",
-    "I am just walking off, coz me is too fat.",
-    "I Fugged off!",
-    "Will run for chocolate.",
-    "I run because I really like food.",
-    "Running...\nbecause dieting is not an option.",
-    "Wicked fast runnah",
-    "If you wanna catch me, you got to be fast...\nIf you wanna stay with me, you got to be good...\nBut if you wanna pass me...\nYou've got to be kidding.",
-    "Anyone can run a hundred meters, it's the next forty-two thousand and two hundred that count.",
-    "Why are all these people following me?",
-    "Are the kids still chasing me?",
-    "Running a marathon...there's an app for that.",
+    "Me jui",
+    "Arribederchi",
+    "I'm fast af boiii",
 ]
 
 PRO_STR = [
@@ -492,12 +482,9 @@ CHASE_STR = [
 
 HELLOSTR = [
     "Hi !",
-    "‘Ello, gov'nor!",
     "What’s crackin’?",
     "‘Sup, homeslice?",
     "Howdy, howdy ,howdy!",
-    "Hello, who's there, I'm talking.",
-    "You know who this is.",
     "Yo!",
     "Whaddup.",
     "Greetings and salutations!",
