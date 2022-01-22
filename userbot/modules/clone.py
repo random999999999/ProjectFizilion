@@ -15,11 +15,11 @@ async def clone(event):
         return
     inputArgs = event.pattern_match.group(1)
     if "-r" in inputArgs:
-        await event.edit("`Reverting to my true identity..`")
+        await event.edit("`Regresando a mi verdadera identidad..`")
         if not STORAGE.userObj:
             return await event.edit("`You need to clone a profile before reverting!`")
         await updateProfile(STORAGE.userObj, reset=True)
-        await event.edit("`Feels good to be back.`")
+        await event.edit("`Se siente bien estar de vuelta.`")
         return
     elif "-d" in inputArgs:
         STORAGE.userObj = False
@@ -29,9 +29,9 @@ async def clone(event):
         STORAGE.userObj = await event.client(GetFullUserRequest(event.from_id))
     LOGS.info(STORAGE.userObj)
     userObj = await getUserObj(event)
-    await event.edit("`Stealing this random person's identity..`")
+    await event.edit("`Robando identidad...`")
     await updateProfile(userObj)
-    await event.edit("`I am you and you are me.`")
+    await event.edit("`Yo soy tú y tú eres yo.`")
 
 
 async def updateProfile(userObj, reset=False):
