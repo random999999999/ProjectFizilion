@@ -15,7 +15,7 @@ async def kill_func(message):
         "-------------->_____",
         "------------------->",
         "------>;(^。^)ノ",
-        "(￣ー￣) DED",
+        "(￣ー￣) MUERTO",
         "<b>Objetivo asesinado. (´°̥̥̥̥̥̥̥̥ω°̥̥̥̥̥̥̥̥｀)</b>",
     ]
     for i in range(10):
