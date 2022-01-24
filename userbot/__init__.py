@@ -101,7 +101,7 @@ GIT_REPO_NAME = os.environ.get("GIT_REPO_NAME") or None
 GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN") or None
 
 # Custom (forked) repo URL and BRANCH for updater.
-UPSTREAM_REPO_URL = (os.environ.get("UPSTREAM_REPO_URL")
+UPSTREAM_REPO_URL = (os.environ.get("https://github.com/random999999999/ProjectFizilion.git")
                      or "https://github.com/FrosT2k5/ProjectFizilion.git")
 UPSTREAM_REPO_BRANCH = os.environ.get("UPSTREAM_REPO_BRANCH") or "demon"
 ###
