@@ -22,7 +22,7 @@ from userbot.events import register
 async def who(event):
 
     await event.edit(
-        "`Siéntense tranquilo mientras robo algunos datos...`"
+        "`Sit tight while I steal some data from *Global Network Zone*...`"
     )
 
     if not os.path.isdir(TEMP_DOWNLOAD_DIRECTORY):
@@ -100,7 +100,7 @@ async def fetch_info(replied_user, event):
         )
     )
     replied_user_profile_photos_count = (
-        "La persona necesita ayuda para cargar la imagen de perfil."
+        "Person needs help with uploading profile picture."
     )
     try:
         replied_user_profile_photos_count = replied_user_profile_photos.count
@@ -112,7 +112,7 @@ async def fetch_info(replied_user, event):
     try:
         dc_id, location = get_input_location(replied_user.profile_photo)
     except Exception as e:
-        dc_id = "No se pudo recuperar la ID!"
+        dc_id = "Couldn't fetch DC ID!"
         str(e)
     common_chat = replied_user.common_chats_count
     username = replied_user.user.username
@@ -126,27 +126,27 @@ async def fetch_info(replied_user, event):
     first_name = (
         first_name.replace("\u2060", "")
         if first_name
-        else ("No tiene")
+        else ("This User has no First Name")
     )
     last_name = (
-        last_name.replace("\u2060", "") if last_name else ("No tiene")
+        last_name.replace("\u2060", "") if last_name else ("This User has no Last Name")
     )
-    username = "@{}".format(username) if username else ("No tiene")
-    user_bio = "No tiene" if not user_bio else user_bio
+    username = "@{}".format(username) if username else ("This User has no Username")
+    user_bio = "This User has no About" if not user_bio else user_bio
 
     caption = "<b>USER INFO:</b>\n\n"
-    caption += f"Primer nombre: {first_name}\n"
-    caption += f"Segundo nombre: {last_name}\n"
-    caption += f"Nombre de usuario: {username}\n"
-    caption += f"Data center ID: {dc_id}\n"
-    caption += f"Numero de fotos: {replied_user_profile_photos_count}\n"
-    caption += f"Es Bot: {is_bot}\n"
-    caption += f"Está Restringido: {restricted}\n"
-    caption += f"Verificado por Telegram: {verified}\n"
+    caption += f"First Name: {first_name}\n"
+    caption += f"Last Name: {last_name}\n"
+    caption += f"Username: {username}\n"
+    caption += f"Data Centre ID: {dc_id}\n"
+    caption += f"Number of Profile Pics: {replied_user_profile_photos_count}\n"
+    caption += f"Is Bot: {is_bot}\n"
+    caption += f"Is Restricted: {restricted}\n"
+    caption += f"Is Verified by Telegram: {verified}\n"
     caption += f"ID: <code>{user_id}</code>\n\n"
     caption += f"Bio: \n<code>{user_bio}</code>\n\n"
-    caption += f"Chats en común: {common_chat}\n"
-    caption += f"Link permanente para el perfil: "
+    caption += f"Common Chats with this user: {common_chat}\n"
+    caption += f"Permanent Link To Profile: "
     caption += f'<a href="tg://user?id={user_id}">{first_name}</a>'
 
     return photo, caption
