@@ -26,7 +26,8 @@ DEF_UNAPPROVED_MSG = (
     "Hey there :)\n"
     "I am Fizilion, my Master's assistant.\n"
     "Please wait for my Master to read your PMs.\n"
-    "Have patience, otherwise spamming my Master's pm will result in a block.\n\n\n")
+    "Have patience, otherwise spamming my Master's pm will result in a block.\n\n\n"
+    "*This PM is Powered by Fizilion Ai")
 # =================================================================
 
 
